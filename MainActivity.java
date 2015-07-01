@@ -12,7 +12,10 @@ import java.util.ArrayList;
 import java.util.Set;
 
 
-
+/**
+ * The main class activity. Directs the user to the
+ * many different places he can go
+ */
 public class MainActivity extends ActionBarActivity {
 
     TextView countNum;
@@ -58,10 +61,19 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    /**
+     * sets the value in the textview box on the main page of the app
+     * @param newCount the new value to be displayed
+     */
     private void setCount(String newCount){
         countNum.setText(newCount);
     }
 
+    /**
+     * increase the number to be displayed in the textview
+     * on the app page and set the textview to this new number.
+     * @param v the View object
+     */
     public void advanceCount(View v){
         String temp = (String) countNum.getText();
         Integer newNumber = Integer.valueOf(temp);
@@ -70,6 +82,11 @@ public class MainActivity extends ActionBarActivity {
         countNum.setText(temp);
     }
 
+    /**
+     * not working currently.
+     * Will save the list of users and their information to the phone
+     * @param v the View object
+     */
     public void saveCount(View v){
 //        SharedPreferences.Editor prefsEditor = savedCountData.edit();
 //        Gson gson = new Gson();

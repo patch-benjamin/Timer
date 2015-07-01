@@ -3,7 +3,10 @@ package com.example.benjaminpatch.timer;
 import java.util.ArrayList;
 import java.util.Map;
 
-
+/**
+ * a class for each user. contains the books they are reading,
+ * the highest level they have completed, and their name.
+ */
 public class User {
     String name;
     int highestLevel;
