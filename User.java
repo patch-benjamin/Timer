@@ -20,10 +20,18 @@ public class User {
         name = newName;
     }
 
+    /**
+     * a simple setter
+     * @param newHighestLevel the highest level completed by this user
+     */
     public void setHighestLevel(int newHighestLevel){
         highestLevel = newHighestLevel;
     }
 
+    /**
+     * a simple getter.
+     * @return return the int of the highest level completed by this user.
+     */
     public int getHighestLevel(){
         return highestLevel;
     }
